@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter','Lexend Deca';
+}
+html{
+    font-size: 15px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+.card{
+    display: flex;
+    width: 80%;
+    height: 70%;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 20px;
+}
+.card-info{
+    width: 55%;
+    padding:7vh 5.5vw 0 ;
+}
+.card-info h2{
+    color: white;
+    font-size: 2.6vw;
+    font-weight: bold;
+}
+.card-info h2 span{
+    color: hsl(277, 64%, 61%);
+}
+.main-p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 1.2vw;
+    line-height: 4vh;
+    font-weight: lighter;
+    padding-top: 4vh;
+    padding-right: 4vw;
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12vh ;
+    padding-right: 4vw;
+}
+.stat span{
+    color: white;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+.stat p{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 1vw;
+    padding-top: 0.5vh;
+}
+.card-img{
+    width: 45%;
+    background: linear-gradient(hsla(277, 65%, 38%, 0.562),hsla(277, 65%, 38%, 0.562)), url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 20px 20px 0 ;
+}
+
+@media (max-width:375px){
+    .card{
+        flex-direction: column-reverse;
+        width: 347px;
+        height: 90%;
+        border-radius: 7px 7px 0 0;
+    }
+    .card-img{
+        height: 30%;
+        width: 100%;
+        background:linear-gradient(hsla(277, 65%, 38%, 0.562),hsla(277, 65%, 38%, 0.562)), url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 7px;
+    }
+    .card-info{
+        height: 70%;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .card-info h2{
+        font-size: 6.4vw;
+        padding: 4vh 15vw 0;
+    }
+    .card-info p{
+        padding: 2.5vh 8vh 2vh;
+        line-height: 1.4em;
+        font-size: 3.4vw;
+    }
+    .stats{
+        flex-direction: column;
+        padding: 0;
+        transform: scale(0.9);
+    }
+    .stat p{
+        font-size: 3vw;
+        padding-top: 3px;
+    }
+    .stat span{
+        font-size: 5vw;
+    }
+}
+
+
+
+
+
